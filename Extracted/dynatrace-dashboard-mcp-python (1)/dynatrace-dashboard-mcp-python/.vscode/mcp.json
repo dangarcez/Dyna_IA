@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "dynatrace-dashboard-python": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["${workspaceFolder}/server.py"],
+      "env": {
+        "DTCTL_CONTEXT": "meu-ambiente",
+        "DTCTL_BIN": "C:/CAMINHO/REAL/dtctl.exe",
+        "DTCTL_ALLOW_WRITE": "0"
+      }
+    }
+  }
+}

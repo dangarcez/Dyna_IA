@@ -1,0 +1,11 @@
+{
+  "dashboard_id": "SUBSTITUA_PELO_ID_REAL",
+  "tile_id": "2",
+  "visualization": "areaChart",
+  "settings_patch": {
+    "legend": {"showLegend": true},
+    "seriesConfig": {"curve": "linear", "pointsDisplay": "auto", "gapPolicy": "gap"}
+  },
+  "mode": "replace",
+  "confirm": false
+}

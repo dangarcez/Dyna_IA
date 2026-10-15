@@ -1,0 +1,30 @@
+{
+  "name": "Observabilidade - exemplo",
+  "type": "dashboard",
+  "content": {
+    "version": 21,
+    "variables": [],
+    "tiles": {
+      "1": {
+        "type": "markdown",
+        "content": "# Observabilidade\nExemplo para adaptar ao seu ambiente"
+      },
+      "2": {
+        "type": "data",
+        "title": "CPU dos hosts",
+        "query": "timeseries cpu = avg(dt.host.cpu.usage), by:{dt.entity.host}",
+        "visualization": "lineChart",
+        "querySettings": {},
+        "visualizationSettings": {
+          "legend": {"showLegend": true, "position": "auto"},
+          "seriesConfig": {"curve": "linear", "pointsDisplay": "auto", "gapPolicy": "gap"}
+        },
+        "davis": {"enabled": false, "davisVisualization": {"isAvailable": true}}
+      }
+    },
+    "layouts": {
+      "1": {"x": 0, "y": 0, "w": 24, "h": 2},
+      "2": {"x": 0, "y": 2, "w": 24, "h": 8}
+    }
+  }
+}

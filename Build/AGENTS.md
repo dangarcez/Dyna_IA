@@ -1,0 +1,1 @@
+Para dynatrace, não use comando dtctl direto, apenas pelos mcps

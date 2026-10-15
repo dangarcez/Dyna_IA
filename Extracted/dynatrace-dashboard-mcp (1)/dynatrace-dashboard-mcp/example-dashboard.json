@@ -1,0 +1,23 @@
+{
+  "name": "Visao de Hosts - Demo",
+  "type": "dashboard",
+  "content": {
+    "version": 21,
+    "variables": [],
+    "tiles": {
+      "1": { "type": "markdown", "content": "# Observabilidade de hosts\nDashboard gerenciado via MCP local." },
+      "2": {
+        "type": "data",
+        "title": "CPU por host",
+        "query": "timeseries avg(dt.host.cpu.usage), by:{dt.entity.host}",
+        "visualization": "lineChart",
+        "visualizationSettings": {},
+        "querySettings": {}
+      }
+    },
+    "layouts": {
+      "1": { "x": 0, "y": 0, "w": 24, "h": 2 },
+      "2": { "x": 0, "y": 2, "w": 24, "h": 8 }
+    }
+  }
+}

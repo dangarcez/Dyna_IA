@@ -1,0 +1,9 @@
+{
+  "dashboard_id": "ID_DO_DASHBOARD",
+  "tile_id": "2",
+  "settings_patch": {
+    "legend": {"showLegend": false},
+    "axes": {"yAxis": {"label": "CPU (%)", "showLabel": true}}
+  },
+  "mode": "merge"
+}

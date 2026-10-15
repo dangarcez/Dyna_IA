@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "dynatrace-dashboard-editor-http": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["${workspaceFolder}/server.py"]
+    }
+  }
+}

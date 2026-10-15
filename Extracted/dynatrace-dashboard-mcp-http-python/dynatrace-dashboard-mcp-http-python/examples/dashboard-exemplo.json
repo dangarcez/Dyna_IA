@@ -1,0 +1,24 @@
+{
+  "version": 21,
+  "variables": [],
+  "tiles": {
+    "1": {
+      "type": "markdown",
+      "content": "# Observabilidade de infraestrutura"
+    },
+    "2": {
+      "type": "data",
+      "title": "CPU dos hosts",
+      "query": "timeseries cpu=avg(dt.host.cpu.usage), by:{dt.entity.host}",
+      "visualization": "lineChart",
+      "visualizationSettings": {
+        "legend": {"showLegend": true, "position": "bottom"}
+      },
+      "querySettings": {}
+    }
+  },
+  "layouts": {
+    "1": {"x": 0, "y": 0, "w": 24, "h": 1},
+    "2": {"x": 0, "y": 1, "w": 24, "h": 8}
+  }
+}

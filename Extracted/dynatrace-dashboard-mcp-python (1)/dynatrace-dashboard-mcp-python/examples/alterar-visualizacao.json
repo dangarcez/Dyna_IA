@@ -1,0 +1,11 @@
+{
+  "dashboard_id": "SUBSTITUA_PELO_ID_REAL",
+  "tile_id": "2",
+  "settings_patch": {
+    "legend": {"showLegend": false},
+    "axes": {"yAxis": {"showLabel": true, "label": "CPU (%)"}},
+    "seriesConfig": {"curve": "linear", "pointsDisplay": "auto"}
+  },
+  "mode": "merge",
+  "confirm": false
+}

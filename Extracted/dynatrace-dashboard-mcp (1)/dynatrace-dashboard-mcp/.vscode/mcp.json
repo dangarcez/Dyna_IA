@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "dynatrace-dashboard-local": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/src/index.js"
+      ],
+      "env": {
+        "DTCTL_CONTEXT": "meu-ambiente"
+      }
+    }
+  }
+}
